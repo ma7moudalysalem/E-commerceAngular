@@ -1,0 +1,16 @@
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a class="btn btn-floating m-1" href="#!" target="_blank" role="button"
+      ><i
+        ><img
+          src="/assets/images/work-3.jpg"
+          class="mx-4 rounded-pill"
+          style="width: 100px; height: 100px" /></i
+    ></a>
+    <li class="sidebar-brand" *ngFor="let cat of categorylist">
+      <a href="products/category/{{ cat.catid }}" class="mx-5">{{
+        cat.catname
+      }}</a>
+    </li>
+  </ul>
+</div>

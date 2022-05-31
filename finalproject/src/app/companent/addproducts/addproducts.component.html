@@ -1,0 +1,201 @@
+<!-- <section class="card bg-light text-dark container-fluid mt-5 ">
+  <div  >
+      <div class="row gx-4 gx-lg-5 align-items-center row">
+          <div class="col-6"><img  class="card-img-top mb-5 mb-md-0" src="/assets/images/BMW 2 Series.jpg" alt="..." /></div>
+          <form (ngSubmit)="AddNewProduct(name.value,Price.value,Description.value,img.value,Type.value)" class="col-6 g-3 mt-5">
+            <div>
+            <div class="col-12 ">
+              <label for="inputEmail4"  class="form-label">Name</label>
+              <input type="text" #name class="form-control border-0" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputPassword4"  class="form-label">Price</label>
+              <input type="number" #Price class="form-control border-0" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Description</label>
+              <input type="text" #Description class="form-control border-0" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+
+               <img  [src]="urllink" >
+               <input type="file" #img class="btn btn-success" accept="/image/*" (change)="selectFiles($event)">
+            </div>
+
+
+
+            <div class="col-12">
+              <label for="type" class="form-label">Type</label>
+              <input type="text" #Type class="form-control border-0" id="type" placeholder="clothes , cars ,Phones">
+            </div>
+            <div>
+              <label for="type" class="form-label">Type</label>
+              <select class="custom-select" required name="product-rating">
+                <option select value="">Choose....</option>
+                <option value="1">Cloths</option>
+                <option value="2">Cars</option>
+                <option value="3">Phones</option>
+                <option value="4">LabTop</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class=" offset-5 btn btn-primary">Add Product</button>
+            </div>
+          </div>
+          </form>
+
+          </div>
+      </div>
+    </section>
+
+
+ -->
+ <div class="card col-10" style="margin-left: 150px;  margin-top: 60px; box-shadow: 1px 4px 10px 1px #aaa;">
+  <div class="row g-0">
+    <div class="col-4">
+
+
+
+
+<!-- Slider -->
+
+<section>
+  <div class="rt-container">
+    <div class="col-rt-12">
+
+
+      <div id="slider">
+        <div class="slides">
+          <div class="slider">
+
+            <div class="content">
+              <div class="content-txt">
+
+              </div>
+            </div>
+            <div class="image"> <img src="/assets/imagesSlider/s2.jpg"> </div>
+          </div>
+
+          <div class="slider">
+
+            <div class="content">
+              <div class="content-txt">
+
+
+              </div>
+            </div>
+            <div class="image"> <img src="/assets/imagesSlider/s1.jpg"> </div>
+          </div>
+
+
+
+          <div class="slider">
+            <div class="content">
+              <div class="content-txt">
+
+              </div>
+            </div>
+            <div class="image"> <img src="/assets/imagesSlider/s2.jpg"> </div>
+          </div>
+          <div class="slider">
+
+            <div class="content">
+              <div class="content-txt">
+
+              </div>
+            </div>
+            <div class="image"> <img src="/assets/imagesSlider/s3.jpg"> </div>
+          </div>
+        </div>
+        <div class="switch">
+          <ul>
+            <li>
+              <div class="on"></div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- cards -->
+
+
+
+      <!-- <img src="/assets/imagesSlider/s1.jpg" class="img-fluid rounded-start" alt="..."> -->
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+
+              <!-- Form -->
+
+<!-- Form2 -->
+
+<div id="feedback-form">
+  <div class="addproduct">
+  <h2 class="header">Add    Products</h2>
+</div>
+  <div>
+    <form  (ngSubmit)="AddNewProduct(name.value,Price.value,Description.value,img.value,Type.value)"class="col-6 g-3 mt-5">
+      <label   for="inputEmail4"><h6>Name</h6></label>
+      <small class="text-danger" *ngIf="name.value == ''">
+        Name Is requierd
+    </small>
+      <input type="text" #name formControlName="name" class="form-control border-0" id="inputEmail4"/>
+
+
+      <label for="inputPassword4" ><h6>Price</h6></label>
+      <small class="text-danger" *ngIf="Price.value == ''">
+        Price Is requierd
+    </small>
+      <input  type="number" formControlName="Price" #Price class="form-control border-0" id="inputPassword4"/>
+
+      <label for="inputAddress"><h6>Description</h6></label>
+      <small class="text-danger" *ngIf="Description.value == ''">
+        Description Is requierd
+    </small>
+      <input type="text" formControlName="Description" #Description class="form-control border-0" id="inputAddress" >
+
+      <label for="type" ><h6>Type</h6></label>
+      <small class="text-danger" *ngIf="Type.value == ''">
+        Type Is requierd
+    </small>
+      <input type="text" formControlName="Type" #Type class="form-control border-0" id="type">
+
+
+
+        <label for="type" ><h6>Select Image Product</h6></label>
+
+        <img [src]="urllink">
+        <input type="file" #img  style="background-color: #FAF0E6;" accept="/image/*" (change)="selectFiles($event)">
+
+
+
+
+      <button type="submit">Add Product</button>
+      <a href="/admin/details" class="btn btn-success m-5 p-2">
+        Back</a
+       >
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<!--  -->
+
+
+      </div>
+    </div>
+  </div>
+</div>

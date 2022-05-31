@@ -1,0 +1,126 @@
+<!--
+<form [formGroup]="editproduct" (ngSubmit)="updateproc()" >
+  <div *ngIf="alert" class="alert alert-success alert-dismissible fade now show " role="alert">
+    <strong>Success </strong> Your Are Data Update Successfully
+    <button (click)="closealert()" type="button" class="close" data-dismiss="alert"  >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="form-group">
+    <label>Product Name</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label>Product price</label>
+    <input type="text" class="form-control" formControlName="price">
+  </div>
+  <div class="form-group">
+    <label>Product type</label>
+    <input type="text" class="form-control" formControlName="type">
+  </div>
+  <div class="form-group">
+    <label>Product Description</label>
+    <input type="text" class="form-control" formControlName="Description">
+  </div>
+  <input type="submit" class="btn btn-success" value="update">
+</form> -->
+
+<section class="vh-100 mt-5 mb-5" style="background-color: #eee">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12">
+        <div class="card text-black" style="border-radius: 25px">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-7 order-2 order-lg-1">
+                <form
+                  [formGroup]="editproduct"
+                  (ngSubmit)="updateproc()"
+                  class="mx-1 mx-md-4"
+                >
+                  <div
+                    *ngIf="alert"
+                    class="alert alert-success alert-dismissible fade now show"
+                    role="alert"
+                  >
+                    <strong>Success </strong> Your Are Data Update Successfully
+                    <button
+                      (click)="closealert()"
+                      type="button"
+                      class="close"
+                      data-dismiss="alert"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="mb-4">
+                      <label class="fs-5 fw-bold">Product Name</label>
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        formControlName="name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="mb-4">
+                      <label class="fs-5 fw-bold">Product price</label>
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        formControlName="price"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="mb-4">
+                      <label class="fs-5 fw-bold">Product type</label>
+                      <input
+                        type="text"
+                        class="form-control p-2 green-700"
+                        formControlName="type"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="mb-4">
+                      <label class="fs-5 fw-bold">Product Description</label>
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        formControlName="Description"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-4 ">
+                    <input
+                      type="submit"
+                      class="btn btn-primary offset-5 m-5"
+                      value="update"
+                    />
+                    <a href="/admin/details" class="btn btn-success m-5">
+                      Back</a
+                     >
+                  </div>
+
+                </form>
+              </div>
+              <div
+                class="col-md-10 col-lg-5 d-flex align-items-center order-1 order-lg-2"
+              >
+                <img
+                  src="/assets/images/work-5.jpg"
+                  class="img-fluid rounded-corner"
+                  alt="Sample image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
